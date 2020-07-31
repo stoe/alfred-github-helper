@@ -1,0 +1,15 @@
+{
+  "parserOptions": {
+    "ecmaVersion": 2020
+  },
+  "env": {
+    "es6": true,
+    "node": true
+  },
+  "plugins": ["github"],
+  "extends": ["plugin:github/recommended"],
+  "rules": {
+    "no-console" : "warn",
+    "github/no-then": "warn"
+  }
+}

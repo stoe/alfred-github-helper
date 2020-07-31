@@ -1,0 +1,52 @@
+on:
+  pull_request:
+  push:
+    branches-ignore:
+      - main
+
+name: ci
+
+jobs:
+  ci:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [12.x, 14.x]
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          lfs: true
+
+      - name: Setup node
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node-version }}
+
+      - name: Get npm cache directory
+        id: npm-cache
+        run: |
+          echo "::set-output name=dir::$(npm config get cache)"
+
+      - name: Cache node modules
+        uses: actions/cache@v2
+        with:
+          path: ${{ steps.npm-cache.outputs.dir }}
+          key: npm-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: npm-
+
+      - name: Install Dependencies
+        run: npm install --ignore-scripts --pure-lockfile
+        if: steps.npm-cache.outputs.cache-hit != 'true'
+
+      - name: Build
+        run: npm run build
+        env:
+          CI: true
+
+      - name: Test
+        run: npm test
+        env:
+          CI: true

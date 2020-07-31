@@ -1,0 +1,80 @@
+{
+  "name": "@stoe/alfred-github-helper",
+  "version": "1.0.0",
+  "description": "Alfred GitHub",
+  "keywords": [
+    "alfred",
+    "github",
+    "bookmarks",
+    "teams",
+    "members"
+  ],
+  "author": {
+    "name": "Stefan Stölzle",
+    "email": "stoe@github.com",
+    "url": "https://github.com/stoe"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/stoe/alfred-github-helper#readme",
+  "repository": {
+    "type": "git",
+    "url": "ssh://git@github.com/stoe/alfred-github-helper.git"
+  },
+  "bugs": {
+    "url": "https://github.com/stoe/alfred-github-helper/issues"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
+  "engines": {
+    "node": ">=12",
+    "npm": ">=6"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "files": [
+    "assets/",
+    "lib/",
+    "icon.png",
+    "info.plist",
+    "license",
+    "package.json",
+    "readme.md"
+  ],
+  "scripts": {
+    "postinstall": "alfy-init",
+    "preuninstall": "alfy-cleanup",
+    "pretest": "eslint --print-config .eslintrc.json | eslint-config-prettier-check",
+    "test": "eslint **/*.js && ava"
+  },
+  "dependencies": {
+    "@octokit/core": "^3.1.1",
+    "alfy": "^0.9.1",
+    "open": "^7.1.0"
+  },
+  "devDependencies": {
+    "@github/prettier-config": "^0.0.4",
+    "alfy-test": "^0.4.0",
+    "ava": "^3.11.0",
+    "eslint": "^7.5.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-github": "^4.1.1"
+  },
+  "resolutions": {
+    "dot-prop": ">=5.1.1"
+  },
+  "ava": {
+    "files": [
+      "**/*.t.js"
+    ],
+    "verbose": true
+  },
+  "scope": [
+    "repo",
+    "read:user",
+    "read:org",
+    "user:email"
+  ],
+  "prettier": "@github/prettier-config"
+}
