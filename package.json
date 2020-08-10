@@ -1,6 +1,6 @@
 {
   "name": "@stoe/alfred-github-helper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Alfred GitHub",
   "keywords": [
     "alfred",
@@ -62,7 +62,7 @@
     "eslint-plugin-github": "^4.1.1"
   },
   "resolutions": {
-    "dot-prop": ">=5.1.1"
+    "dot-prop": ">=5.2.0"
   },
   "ava": {
     "files": [
