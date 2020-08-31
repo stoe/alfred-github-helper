@@ -34,7 +34,7 @@ jobs:
           key: npm-${{ hashFiles('**/package-lock.json') }}
           restore-keys: npm-
 
-      - name: Install
+      - name: Install Dependencies
         run: npm install --ignore-scripts --pure-lockfile
         if: steps.node-cache.outputs.cache-hit != 'true'
 
