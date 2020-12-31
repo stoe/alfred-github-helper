@@ -1,9 +1,23 @@
 version: 2
 updates:
-  - package-ecosystem: "npm"
-    directory: "/"
+  - package-ecosystem: 'github-actions'
+    directory: '/'
     schedule:
-      interval: "weekly"
-      day: "saturday"
-      time: "09:00"
-      timezone: "Europe/Berlin"
+      interval: 'weekly'
+      day: 'saturday'
+      time: '09:00'
+      timezone: 'Europe/Berlin'
+
+  - package-ecosystem: 'npm'
+    directory: '/'
+    schedule:
+      interval: 'weekly'
+      day: 'saturday'
+      time: '09:00'
+      timezone: 'Europe/Berlin'
+    commit-message:
+      prefix: 'npm prod'
+      prefix-development: 'npm dev'
+      include: 'scope'
+    labels:
+      - 'dependency :robot:'
