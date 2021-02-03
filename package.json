@@ -45,7 +45,7 @@
   "scripts": {
     "postinstall": "alfy-init",
     "preuninstall": "alfy-cleanup",
-    "pretest": "node node_modules/.bin/eslint-config-prettier .eslintrc.json",
+    "pretest": "npx eslint-config-prettier .eslintrc.json",
     "test": "eslint **/*.js && ava"
   },
   "dependencies": {
