@@ -51,13 +51,13 @@
   "dependencies": {
     "@octokit/core": "^3.2.5",
     "alfy": "^0.10.0",
-    "open": "^7.3.1"
+    "open": "^7.4.0"
   },
   "devDependencies": {
     "@github/prettier-config": "^0.0.4",
     "alfy-test": "^0.4.0",
     "ava": "^3.15.0",
-    "eslint": "^7.18.0",
+    "eslint": "^7.19.0",
     "eslint-config-prettier": "^7.2.0",
     "eslint-plugin-github": "^4.1.1"
   },
