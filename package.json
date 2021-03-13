@@ -59,7 +59,7 @@
     "ava": "^3.15.0",
     "eslint": "^7.22.0",
     "eslint-config-prettier": "^8.1.0",
-    "eslint-plugin-github": "^4.1.1"
+    "eslint-plugin-github": "^4.1.2"
   },
   "resolutions": {
     "dot-prop": ">=5.2.0"
