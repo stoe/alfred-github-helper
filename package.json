@@ -10,19 +10,12 @@
     "members"
   ],
   "author": {
-    "name": "Stefan Stölzle",
+    "name": "Stefan StÃ¶lzle",
     "email": "stoe@github.com",
     "url": "https://github.com/stoe"
   },
   "license": "MIT",
-  "homepage": "https://github.com/stoe/alfred-github-helper#readme",
-  "repository": {
-    "type": "git",
-    "url": "ssh://git@github.com/stoe/alfred-github-helper.git"
-  },
-  "bugs": {
-    "url": "https://github.com/stoe/alfred-github-helper/issues"
-  },
+  "repository": "github:stoe/alfred-github-helper",
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   },
