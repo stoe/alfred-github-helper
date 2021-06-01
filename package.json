@@ -44,7 +44,7 @@
   "dependencies": {
     "@octokit/core": "^3.3.2",
     "alfy": "^0.10.0",
-    "open": "^8.0.4"
+    "open": "^8.2.0"
   },
   "devDependencies": {
     "@github/prettier-config": "^0.0.4",
