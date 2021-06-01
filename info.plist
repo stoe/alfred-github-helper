@@ -271,7 +271,7 @@
 	<key>description</key>
 	<string>Alfred GitHub Helper</string>
 	<key>disabled</key>
-	<false/>
+	<true/>
 	<key>name</key>
 	<string>@stoe/alfred-github-helper</string>
 	<key>objects</key>
@@ -787,6 +787,8 @@
 				<true/>
 				<key>clipboardtext</key>
 				<string>{query}</string>
+				<key>ignoredynamicplaceholders</key>
+				<false/>
 				<key>transient</key>
 				<false/>
 			</dict>
