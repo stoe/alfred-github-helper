@@ -42,7 +42,7 @@
     "test": "eslint **/*.js && ava"
   },
   "dependencies": {
-    "@octokit/core": "^3.4.0",
+    "@octokit/core": "^3.5.0",
     "alfy": "^0.10.0",
     "open": "^8.2.0"
   },
