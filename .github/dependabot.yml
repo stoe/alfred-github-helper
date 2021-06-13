@@ -5,19 +5,18 @@ updates:
     schedule:
       interval: 'weekly'
       day: 'saturday'
-      time: '09:00'
-      timezone: 'Europe/Berlin'
     commit-message:
-      prefix: 'action'
+      prefix: '🆙 action'
     labels:
       - 'github-action :robot:'
 
   - package-ecosystem: 'npm'
     directory: '/'
     schedule:
-      interval: 'monthly'
+      interval: 'weekly'
+      day: 'saturday'
     commit-message:
-      prefix: 'npm'
+      prefix: '🆙 npm'
       include: 'scope'
     labels:
       - 'dependency :robot:'
