@@ -48,7 +48,7 @@
   },
   "devDependencies": {
     "@github/prettier-config": "^0.0.4",
-    "alfy-test": "^0.4.0",
+    "alfy-test": "^0.4.1",
     "ava": "^3.15.0",
     "eslint": "^7.28.0",
     "eslint-config-prettier": "^8.3.0",
