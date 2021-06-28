@@ -43,7 +43,7 @@
   },
   "dependencies": {
     "@octokit/core": "^3.5.1",
-    "alfy": "^0.11.0",
+    "alfy": "^0.11.1",
     "open": "^8.2.1"
   },
   "devDependencies": {
