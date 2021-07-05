@@ -1,6 +1,6 @@
 # `@stoe/alfred-github-helper`
 
-[![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier) [![Test](https://github.com/stoe/alfred-github-helper/workflows/ci/badge.svg)](https://github.com/stoe/alfred-github-helper/actions?query=workflow%3Aci) [![CodeQL](https://github.com/stoe/alfred-github-helper/workflows/codeql/badge.svg)](https://github.com/stoe/alfred-github-helper/actions?query=workflow%3Acodeql) [![Publish](https://github.com/stoe/alfred-github-helper/workflows/publish/badge.svg)](https://github.com/stoe/alfred-github-helper/actions?query=workflow%3Apublish)
+[![test](https://github.com/stoe/alfred-github-helper/actions/workflows/test.yml/badge.svg)](https://github.com/stoe/alfred-github-helper/actions/workflows/test.yml) [![codeql](https://github.com/stoe/alfred-github-helper/actions/workflows/codeql.yml/badge.svg)](https://github.com/stoe/alfred-github-helper/actions/workflows/codeql.yml) [![publish](https://github.com/stoe/alfred-github-helper/actions/workflows/publish.yml/badge.svg)](https://github.com/stoe/alfred-github-helper/actions/workflows/publish.yml) [![styled with prettier](https://img.shields.io/badge/styled_with-prettier-ff69b4.svg)](https://github.com/prettier/prettier)
 
 > Alfred GitHub Helper
 

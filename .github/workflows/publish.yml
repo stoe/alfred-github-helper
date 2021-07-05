@@ -1,44 +1,39 @@
+name: publish
+
 on:
   push:
-    branches:
-      - main
-
-name: publish
+    tags:
+      - 'v*.*.*'
 
 jobs:
   publish:
     runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-        with:
-          lfs: true
+    permissions:
+      contents: read
+      packages: write
 
-      - name: Setup node
-        uses: actions/setup-node@v2.1.5
+    steps:
+      - uses: actions/checkout@v2.3.4
+
+      - uses: actions/setup-node@v2.2.0
         with:
-          node-version: 12.x
+          node-version: 14.x
+          registry-url: 'https://registry.npmjs.org'
+          scope: '@stoe'
+
+      # Publish to npm
+      - run: npm publish --access public
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - uses: actions/setup-node@v2.2.0
+        with:
+          node-version: 14.x
           registry-url: 'https://npm.pkg.github.com'
           scope: '@stoe'
 
-      - name: Get npm cache directory
-        id: npm-cache
-        run: |
-          echo "::set-output name=dir::$(npm config get cache)"
-
-      - name: Cache node modules
-        uses: actions/cache@v2.1.6
-        with:
-          path: ${{ steps.npm-cache.outputs.dir }}
-          key: npm-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: npm-
-
-      - name: Install Dependencies
-        run: npm install --ignore-scripts --pure-lockfile
-        if: steps.node-cache.outputs.cache-hit != 'true'
-
-      - name: Publish package
-        run: npm publish
+      # Publish to GitHub Packages
+      - run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
