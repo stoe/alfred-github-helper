@@ -36,6 +36,7 @@
     "readme.md"
   ],
   "scripts": {
+    "format": "npx prettier --config-precedence prefer-file --write . && eslint . --fix",
     "postinstall": "alfy-init",
     "preuninstall": "alfy-cleanup",
     "prepare": "husky install ./.github/husky",
