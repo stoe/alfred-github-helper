@@ -1,6 +1,7 @@
 {
   "parserOptions": {
-    "ecmaVersion": 2020
+    "ecmaVersion": 2020,
+    "sourceType": "module"
   },
   "env": {
     "es6": true,
@@ -9,7 +10,7 @@
   "plugins": ["github"],
   "extends": ["plugin:github/recommended"],
   "rules": {
-    "no-console" : "warn",
+    "no-console": "warn",
     "github/no-then": "warn"
   }
 }
