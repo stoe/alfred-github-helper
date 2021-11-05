@@ -1,0 +1,11 @@
+#!/bin/sh
+
+[ -n "$CI" ] && exit 0
+
+. "$(dirname "$0")/_/husky.sh"
+
+npm run format  --if-present
+
+npm run build  --if-present
+
+npm run test --if-present
