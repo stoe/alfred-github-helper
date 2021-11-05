@@ -271,7 +271,7 @@
 	<key>description</key>
 	<string>Alfred GitHub Helper</string>
 	<key>disabled</key>
-	<true/>
+	<false/>
 	<key>name</key>
 	<string>@stoe/alfred-github-helper</string>
 	<key>objects</key>
