@@ -271,7 +271,7 @@
 	<key>description</key>
 	<string>Alfred GitHub Helper</string>
 	<key>disabled</key>
-	<true/>
+	<false/>
 	<key>name</key>
 	<string>@stoe/alfred-github-helper</string>
 	<key>objects</key>
@@ -565,7 +565,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>./node_modules/.bin/run-node lib/setTeam.js "$1"</string>
+				<string>./node_modules/.bin/run-node lib/team-save "$1"</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -949,7 +949,7 @@
 		</dict>
 	</dict>
 	<key>version</key>
-	<string>1.1.0</string>
+	<string>1.2.1</string>
 	<key>webaddress</key>
 	<string>https://github.com/stoe/alfred-github-helper#readme</string>
 </dict>
