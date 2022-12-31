@@ -11,6 +11,7 @@
   "extends": ["plugin:github/recommended"],
   "rules": {
     "no-console": "warn",
-    "github/no-then": "warn"
+    "github/no-then": "warn",
+    "import/no-unresolved": "off"
   }
 }
