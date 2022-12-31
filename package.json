@@ -45,18 +45,18 @@
     "test": "eslint **/*.js && ava"
   },
   "dependencies": {
-    "@octokit/core": "^4.0.4",
-    "alfy": "^1.0.0",
+    "@octokit/core": "^4.1.0",
+    "alfy": "^1.1.0",
     "open": "^8.4.0",
     "read-pkg-up": "^9.1.0"
   },
   "devDependencies": {
-    "@github/prettier-config": "^0.0.4",
+    "@github/prettier-config": "^0.0.6",
     "alfy-test": "^0.4.2",
-    "ava": "^3.15.0",
-    "eslint": "^8.14.0",
+    "ava": "^5.1.0",
+    "eslint": "^8.31.0",
     "eslint-config-prettier": "^8.5.0",
-    "eslint-plugin-github": "^4.3.6"
+    "eslint-plugin-github": "^4.6.0"
   },
   "ava": {
     "files": [
@@ -66,7 +66,6 @@
   },
   "prettier": "@github/prettier-config",
   "scope": [
-    "repo",
     "read:user",
     "read:org",
     "user:email"
