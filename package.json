@@ -47,7 +47,7 @@
   "dependencies": {
     "@octokit/core": "^4.2.0",
     "alfy": "^1.1.0",
-    "open": "^8.4.1",
+    "open": "^9.0.0",
     "read-pkg-up": "^9.1.0"
   },
   "devDependencies": {
