@@ -55,7 +55,7 @@
     "alfy-test": "^0.4.2",
     "ava": "^5.2.0",
     "eslint": "^8.34.0",
-    "eslint-config-prettier": "^8.6.0",
+    "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-github": "^4.6.1"
   },
   "ava": {
