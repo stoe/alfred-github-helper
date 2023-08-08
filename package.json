@@ -48,7 +48,7 @@
     "@octokit/core": "^4.2.0",
     "alfy": "^1.1.0",
     "open": "^9.0.0",
-    "read-pkg-up": "^9.1.0"
+    "read-pkg-up": "^10.0.0"
   },
   "devDependencies": {
     "@github/prettier-config": "^0.0.6",
