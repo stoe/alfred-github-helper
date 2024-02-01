@@ -45,15 +45,15 @@
     "test": "eslint **/*.js && ava"
   },
   "dependencies": {
-    "@octokit/core": "^4.2.0",
-    "alfy": "^1.1.0",
-    "open": "^9.0.0",
-    "read-pkg-up": "^10.0.0"
+    "@octokit/core": "^5.1.0",
+    "alfy": "^2.0.0",
+    "open": "^10.0.3",
+    "read-pkg-up": "^11.0.0"
   },
   "devDependencies": {
     "@github/prettier-config": "^0.0.6",
     "alfy-test": "^0.4.2",
-    "ava": "^5.2.0",
+    "ava": "^6.1.1",
     "eslint": "^8.34.0",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-github": "^4.6.1"
