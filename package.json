@@ -40,7 +40,7 @@
     "format": "npx prettier --config-precedence prefer-file --write . && eslint -c eslint.config.js . --fix",
     "postinstall": "alfy-init",
     "prepare": "husky",
-    "pretest": "npx eslint-config-prettier",
+    "pretest": "npx eslint-config-prettier eslint.config.js",
     "preuninstall": "alfy-cleanup",
     "test": "eslint -c eslint.config.js . && npx ava"
   },
