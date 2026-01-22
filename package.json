@@ -40,7 +40,7 @@
     "format": "npx prettier --config-precedence prefer-file --write . && eslint -c eslint.config.js . --fix",
     "postinstall": "alfy-init",
     "prepare": "husky",
-    "pretest": "npx eslint-config-prettier eslint.config.js",
+    "pretest": "npx eslint-config-prettier",
     "preuninstall": "alfy-cleanup",
     "test": "eslint -c eslint.config.js . && npx ava"
   },
@@ -68,12 +68,6 @@
       "**/tests/*.js"
     ],
     "verbose": true
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": ".husky/pre-commit",
-      "pre-push": ".husky/pre-push"
-    }
   },
   "lint-staged": {
     "packages/**/*.{js,jsx,ts,tsx}": [

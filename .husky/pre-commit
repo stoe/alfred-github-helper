@@ -3,5 +3,5 @@
 [ -n "$CI" ] && exit 0
 
 npm run test --if-present
-# npx lint-staged --verbose --allow-empty
+npx lint-staged --verbose --allow-empty
 echo ""

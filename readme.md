@@ -12,7 +12,7 @@
 ## Installation
 
 ```sh
-$ npm install -g @stoe/alfred-github-helper@1.5.0
+$ npm install -g @stoe/alfred-github-helper
 ```
 
 ## Usage
@@ -48,7 +48,7 @@ Store bookmarks in `~/.alfred-github-helper-bookmarks.json` using the following 
 ![teams and members example](.github/assets/teams-members.png)
 ![member quicklook example](.github/assets/quicklook.png)
 
-Results are cached for 24 hours. Hold Command on a result to open the related GitHub URL.
+Results are cached for 24 hours. Hold `⌘ Command` on a result to open the related GitHub URL.
 
 ### Troubleshooting
 
