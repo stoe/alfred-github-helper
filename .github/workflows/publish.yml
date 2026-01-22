@@ -8,6 +8,7 @@ on:
 permissions:
   contents: read
   packages: write
+  id-token: write
 
 jobs:
   publish:
@@ -15,5 +16,3 @@ jobs:
     with:
       npm: true
       gh: true
-    secrets:
-      npm_token: ${{ secrets.NPM_TOKEN }}
