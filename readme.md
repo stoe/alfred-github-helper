@@ -4,24 +4,24 @@
 
 > Alfred GitHub Helper
 
+## Requirements
+
+- Node 20 or later
+- npm 10 or later
+
 ## Installation
 
 ```sh
-$ npm install -g @stoe/alfred-github-helper@1.0.0
+$ npm install -g @stoe/alfred-github-helper@1.5.0
 ```
-
-You might need to [configuring npm for use with GitHub Packages](https://docs.github.com/en/packages/using-github-packages-with-your-projects-ecosystem/configuring-npm-for-use-with-github-packages) first:
-
-```sh
-$ npm config set @stoe:registry https://npm.pkg.github.com/
-$ npm login --registry=https://npm.pkg.github.com/ --scope=@stoe
-```
-
-See also https://docs.npmjs.com/misc/scope#associating-a-scope-with-a-registry
 
 ## Usage
 
 ### Preparation
+
+1. In Alfred, type `g token <YOUR_PERSONAL_ACCESS_TOKEN>` to store a GitHub personal access token with the scopes `read:user`, `read:org`, and `user:email`.
+2. Still in Alfred, type `g orgteam <org>/<team>` to set the organisation and team slug used for lookups.
+3. Use the keyword `g` for bookmarks and search, and `@` to browse teams and members. A hotkey is included in the workflow; adjust it in Alfred if you prefer a different binding.
 
 ![no GitHub token](.github/assets/no-token.png)
 ![no org nor team](.github/assets/no-org-team.png)
@@ -30,7 +30,7 @@ See also https://docs.npmjs.com/misc/scope#associating-a-scope-with-a-registry
 
 ![bookmarks example](.github/assets/bookmarks.png)
 
-In your homefolder create a file called `.alfred-github-helper-bookmarks.json` and add your bookmarks following the below example:
+Store bookmarks in `~/.alfred-github-helper-bookmarks.json` using the following shape. If the file is missing, the workflow loads a default entry that links back to this repository.
 
 ```json
 [
@@ -47,6 +47,13 @@ In your homefolder create a file called `.alfred-github-helper-bookmarks.json` a
 
 ![teams and members example](.github/assets/teams-members.png)
 ![member quicklook example](.github/assets/quicklook.png)
+
+Results are cached for 24 hours. Hold Command on a result to open the related GitHub URL.
+
+### Troubleshooting
+
+- **"GitHub token not found"**: set a personal access token with `g token <token>`.
+- **"Couldn't find your organisation or team"**: set both values with `g orgteam <org>/<team>`.
 
 ## License
 
